@@ -1,0 +1,7 @@
+.venv/
+__pycache__/
+*.pyc
+.env
+# Uploaded Voice Diary recordings — local-disk hackathon-scope storage,
+# see context/decisions-log.md. Never commit patient audio.
+audio_storage/
