@@ -1,6 +1,7 @@
-# RozNoor
+# AI based silent tracker for chronic person
 
-RozNoor is a remote patient-monitoring system for post-discharge heart-failure
+
+AI based silent tracker for chronic person is a remote patient-monitoring system for post-discharge heart-failure
 and post-surgical patients. Patients log daily check-ins (voice or quick-tap)
 from a mobile app; a deterministic rule engine — optionally supported by an AI
 interpretation layer — turns each entry into a Green/Yellow/Orange/Red risk
