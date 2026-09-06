@@ -9,6 +9,11 @@ production database** via `railway connect Postgres --tunnel-only` +
 `python seed.py` on 2026-09-02 — safe to use for live demo testing against
 the deployed backend (`https://roznoor-production.up.railway.app`).
 
+**For hackathon judges**: any login identifier below + the shared password
+works directly on the live web app at `https://roznoor.up.railway.app` (or
+the Android APK in `Mobile App APK file/`) — no signup needed. These are
+fictional demo accounts, safe to share openly.
+
 **Login**: `POST /auth/login` with `phone_or_email` (the "Login identifier"
 column below) + the shared password. All ten seeded users share one demo
 password, hashed via `app.core.security.hash_password` — never a
