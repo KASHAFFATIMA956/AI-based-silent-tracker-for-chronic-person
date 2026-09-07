@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  Debug-build-only network security config. Android blocks plain HTTP
+  (cleartext) traffic by default for apps targeting API 28+ — without this,
+  every request from a real device/emulator to the FastAPI dev backend
+  (plain http://, no TLS) fails with a "CLEARTEXT communication ... not
+  permitted" error before it even leaves the phone. See
+  context/conventions.md ("Running the phone app on the real backend over
+  LAN").
+
+  Cleartext allowed for ALL domains here, but ONLY for debug builds — this
+  file lives under src/debug/, so it's never merged into a release build,
+  which stays on Android's strict HTTPS-only default. Kept permissive
+  (rather than pinned to one IP) because a dev machine's LAN IP can change
+  between DHCP renewals; scoping to "debug builds only" is the real
+  security boundary here, not the domain list.
+-->
+<network-security-config>
+  <base-config cleartextTrafficPermitted="true" />
+</network-security-config>

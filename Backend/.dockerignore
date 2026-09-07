@@ -1,0 +1,13 @@
+# Keep the deploy image small and avoid baking in dev-only/secret/local
+# state — mirrors .gitignore's own exclusions plus Docker-build-specific
+# ones. See Dockerfile.
+.venv/
+__pycache__/
+**/__pycache__/
+*.pyc
+.env
+audio_storage/
+.git/
+.gitignore
+.dockerignore
+*.md
