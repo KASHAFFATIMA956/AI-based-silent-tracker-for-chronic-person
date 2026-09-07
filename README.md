@@ -1,4 +1,4 @@
-# RozNoor
+# AI-based-silent-tracker-for-chronic-person
 
 **Silent symptom & personal baseline monitoring** — a remote patient-monitoring
 system for post-discharge heart-failure and post-surgical patients. Patients
